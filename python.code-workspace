@@ -1,0 +1,43 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.vscode": true,
+			"**/__pycache__": true,
+			"**/.pytest_cache": true,
+			"**/.venv": true
+		},
+		"terminal.integrated.profiles.windows": {
+			"MyPowerShell": {
+				"source": "PowerShell",
+				"icon": "terminal-powershell",
+				"args": [
+					"-NoExit",
+					"-File",
+					"E:\\TFS\\TP2018\\code\\powershell\\SetEnv.ps1"
+				]
+			}
+		},
+		"terminal.integrated.defaultProfile.windows": "MyPowerShell"
+	},
+	"launch": {
+		"configurations": [
+			{
+				"name": "Python: Current File (Integrated Terminal)",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"cwd": "${workspaceFolder}/src"
+			}
+		],
+		"compounds": []
+	}
+}
